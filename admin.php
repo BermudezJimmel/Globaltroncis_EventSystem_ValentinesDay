@@ -19,7 +19,7 @@ include('db.php');
 <body>
 	<div class="container-fluid">
 			<div class="page-header">
-				<h1>Ayala - Glorietta <small>LED Event System</small></h1>
+				<h1>Eastwood <small>LED Event System</small></h1>
 			</div>
 		
 		<div class="buttons">
@@ -39,12 +39,12 @@ include('db.php');
 						)</span></button>
 		   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalNew">
 			   
-		  	NEW
+		  	PENDING
 			  <span>(
 						<?php 
 							include('db.php');
 
-							foreach($con->query('SELECT COUNT(*) FROM user where status="new"') as $row)
+							foreach($con->query('SELECT COUNT(*) FROM user where status="pending"') as $row)
 								{
 							
 								echo $row['COUNT(*)'];
@@ -57,12 +57,12 @@ include('db.php');
 
 		   </button>
 		   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalWorking">
-			   WORKING
+			   ONGOING
 			   <span>(
 						<?php 
 							include('db.php');
 
-							foreach($con->query('SELECT COUNT(*) FROM user where status="working"') as $row)
+							foreach($con->query('SELECT COUNT(*) FROM user where status="ongoing"') as $row)
 								{
 							
 								echo $row['COUNT(*)'];
@@ -173,7 +173,7 @@ include('db.php');
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title text-center">NEW - TABLE</h4>
+        <h4 class="modal-title text-center">PENDING - TABLE</h4>
       </div>
       <div class="modal-body">
 	  <table class="table table-bordered table-striped table-hover" id="table-data">
@@ -188,7 +188,7 @@ include('db.php');
 
 			<?php
 
-        	$get_data = "SELECT * FROM user where status='NEW'";
+        	$get_data = "SELECT * FROM user where status='pending'";
         	$run_data = mysqli_query($con,$get_data);
 
         	while($row = mysqli_fetch_array($run_data))
@@ -253,7 +253,7 @@ include('db.php');
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title text-center">WORKING - TABLE</h4>
+        <h4 class="modal-title text-center">ONGOING - TABLE</h4>
       </div>
       <div class="modal-body">
 	  <table class="table table-bordered table-striped table-hover" id="table-data">
@@ -268,7 +268,7 @@ include('db.php');
 
 			<?php
 
-        	$get_data = "SELECT * FROM user where status='Working'";
+        	$get_data = "SELECT * FROM user where status='ongoing'";
         	$run_data = mysqli_query($con,$get_data);
 
         	while($row = mysqli_fetch_array($run_data))
@@ -429,7 +429,7 @@ include('db.php');
 
 		<?php
 
-		$get_data = "SELECT * FROM user where status='Done'";
+		$get_data = "SELECT * FROM user where status='Pending'";
 		$run_data = mysqli_query($con,$get_data);
 
 		while($row = mysqli_fetch_array($run_data))
