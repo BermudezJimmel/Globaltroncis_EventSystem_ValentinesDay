@@ -112,10 +112,12 @@
         <h5 class="text-center font-weight-bold mb-0 mt-3">Choose your Template</h5>
   </div>
   <div class="modal-body" >
+
       <div class="row row-cols-1 row-cols-md-3 g-4">
         
-        <div class="col" onclick="window.open('Temp1.php')" style="cursor: pointer;margin-bottom:20px">
+        <div class="col" style="cursor: pointer;margin-bottom:20px">
           <div class="card h-80"  style="background-color: #E19ECE;">
+          <a href="Temp1.php">
             <img
               src="assets/img/template/GoldandSilverHeart_PHONE.png"
               class="card-img-center"
@@ -124,32 +126,34 @@
             <div class="card-footer" style="background-color: #E19ECE;">
             <center><h5 class="card-title text-white font-weight-bold">Template 1</h5></center>
             </div>
-          
+            </a>
         </div>
     
       </div>
-      <div class="col" onclick="window.open('Temp2.php')" style="cursor: pointer;margin-bottom:20px">
+      <div class="col" style="cursor: pointer;margin-bottom:20px">
         <div class="card h-80" style="background-color: #D21611;">
-          <img
-            src="assets/img/template/RedHeart_PHONE.png"
-            class="card-img-center"
-            alt="..."
-          />
-          <div class="card-footer" style="background-color: #D21611;">
-          <center><h5 class="card-title text-white font-weight-bold">Template 2</h5></center>
-          </div>
-          
+          <a href="Temp2.php">
+            <img
+              src="assets/img/template/RedHeart_PHONE.png"
+              class="card-img-center"
+              alt="..."
+            />
+            <div class="card-footer" style="background-color: #D21611;">
+            <center><h5 class="card-title text-white font-weight-bold">Template 2</h5></center>
+            </div>
+            </a>
         </div>
       </div>
-      <div class="col" onclick="window.open('Temp3.php')" style="cursor: pointer;margin-bottom:20px">
+      <div class="col" style="cursor: pointer;margin-bottom:20px">
         <div class="card h-80" style="background-color: #D81B71;">
+        <a href="Temp3.php">
           <img
             src="assets/img/template/ValentineTyphography_PHONE.png"
           />
           <div class="card-footer" style="background-color: #D81B71;">
             <center><h5 class="card-title text-white font-weight-bold">Template 3</h5></center>
           </div>
-        
+        </a>
         </div>
       </div>
 </div>
