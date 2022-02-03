@@ -173,7 +173,7 @@ include('db.php');
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title text-center">PENDING - TABLE</h4>
+        <h4 class="modal-title text-center">PENDING/ SCREENING - TABLE</h4>
       </div>
       <div class="modal-body">
 	  <table class="table table-bordered table-striped table-hover" id="table-data">
@@ -253,7 +253,7 @@ include('db.php');
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title text-center">ONGOING - TABLE</h4>
+        <h4 class="modal-title text-center">ONGOING/ SUPERVISE - TABLE</h4>
       </div>
       <div class="modal-body">
 	  <table class="table table-bordered table-striped table-hover" id="table-data">
@@ -334,7 +334,7 @@ include('db.php');
 <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title text-center">DONE - TABLE</h4>
+        <h4 class="modal-title text-center">DONE/ UPLOADED IN LED - TABLE</h4>
       </div>
       <div class="modal-body">
 	  <table class="table table-bordered table-striped table-hover" id="table-data">
